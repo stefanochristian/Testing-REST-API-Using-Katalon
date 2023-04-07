@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test Case untuk men validasi apakah response dari API post register berhasil sudah sesuai</description>
+   <name>TC04 - Validasi Response Post Register Successfull</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>adaebb23-4bde-45d7-85db-38dfbf10eda6</testCaseGuid>
+</TestCaseEntity>

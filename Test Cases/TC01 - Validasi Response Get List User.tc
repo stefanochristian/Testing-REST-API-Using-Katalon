@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>API untuk menampilkan semua list user</description>
+   <name>TC01 - Validasi Response Get List User</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da223655-3436-44d6-8e34-821199aee7dd</testCaseGuid>
+</TestCaseEntity>

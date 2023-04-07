@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Pengujian API reqres.in,,,,2023-04-07 05:20:12,2023-04-07 05:20:13,0.480s,ERROR
+,,,,,,,
+Test Cases/TC01 - Testing API Get List User,,Pengujian API Get List User,,2023-04-07 05:20:13,2023-04-07 05:20:13,0.013s,ERROR
+"response = WS.sendRequest(findTestObject(""Request Object""))",,,,2023-04-07 05:20:13,2023-04-07 05:20:13,0.003s,ERROR

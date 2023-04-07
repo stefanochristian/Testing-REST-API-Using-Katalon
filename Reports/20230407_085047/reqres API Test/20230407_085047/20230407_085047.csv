@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+reqres API Test,,,,2023-04-07 08:50:49,2023-04-07 08:51:00,10.400s,FAILED
+,,,,,,,
+Test Cases/TC01 - Validasi Response Get List User,,API untuk menampilkan semua list user,,2023-04-07 08:50:50,2023-04-07 08:50:52,2.648s,PASSED
+"sendRequest(findTestObject(""GET/Get List Users""))",,Mengirim Request,,2023-04-07 08:50:50,2023-04-07 08:50:51,1.568s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/Get List Users""))",,Mengirim request dan verifikasi response API yang telah ditambahkan dalam object repository,,2023-04-07 08:50:51,2023-04-07 08:50:52,0.724s,PASSED
+"verifyResponseStatusCode(response, 200)",,Verifikasi response status code API,,2023-04-07 08:50:52,2023-04-07 08:50:52,0.004s,PASSED
+"verifyElementsCount(response, ""data.first_name"", 6)",,Verifikasi jumlah element yang ada pada JSON,,2023-04-07 08:50:52,2023-04-07 08:50:52,0.030s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Janet"")",,Verifikasi element pada JSON,,2023-04-07 08:50:52,2023-04-07 08:50:52,0.019s,PASSED
+,,,,,,,
+Test Cases/TC02 - Validasi Response Get Single User,,,,2023-04-07 08:50:52,2023-04-07 08:50:53,0.599s,PASSED
+"response = sendRequest(findTestObject(""GET/Get Single User""))",,,,2023-04-07 08:50:52,2023-04-07 08:50:53,0.191s,PASSED
+jsonSlurper = new groovy.json.JsonSlurper(),,,,2023-04-07 08:50:53,2023-04-07 08:50:53,0.001s,PASSED
+jsonResponse = jsonSlurper.parseText(response.getResponseText()),,,,2023-04-07 08:50:53,2023-04-07 08:50:53,0.002s,PASSED
+email = email,,,,2023-04-07 08:50:53,2023-04-07 08:50:53,0.002s,PASSED
+email = email,,,,2023-04-07 08:50:53,2023-04-07 08:50:53,0.131s,PASSED
+,,,,,,,
+Test Cases/TC03 - Validasi Response Put Update User,,Validasi response API put update User,,2023-04-07 08:50:53,2023-04-07 08:50:54,1.501s,PASSED
+"sendRequest(findTestObject(""PUT/Put Update User""))",,Mengirimkan Request,,2023-04-07 08:50:53,2023-04-07 08:50:54,0.551s,PASSED
+"response = sendRequestAndVerify(findTestObject(""PUT/Put Update User""))",,Mengirimkan dan Verifikasi request dan memberi response balik,,2023-04-07 08:50:54,2023-04-07 08:50:54,0.707s,PASSED
+"verifyResponseStatusCode(response, 200)",,Meresponse status code,,2023-04-07 08:50:54,2023-04-07 08:50:54,0.002s,PASSED
+,,,,,,,
+Test Cases/TC04 - Validasi Response Post Register Successfull,,Test Case untuk men validasi apakah response dari API post register berhasil sudah sesuai,,2023-04-07 08:50:58,2023-04-07 08:51:00,1.270s,FAILED
+"sendRequest(findTestObject(""POST/Post Register Successfull""))",,,,2023-04-07 08:50:58,2023-04-07 08:50:59,0.572s,PASSED
+"response = sendRequestAndVerify(findTestObject(""POST/Post Register Successfull""))",,,,2023-04-07 08:50:59,2023-04-07 08:51:00,0.690s,FAILED
